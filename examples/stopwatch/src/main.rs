@@ -132,7 +132,9 @@ impl Application for Stopwatch {
                 State::Ticking { .. } => "Stop",
             };
 
-            button(label).on_press(Message::Toggle)
+            button(label)
+                .style(theme::Button::Positive)
+                .on_press(Message::Toggle)
         };
 
         let reset_button = button("Reset")
