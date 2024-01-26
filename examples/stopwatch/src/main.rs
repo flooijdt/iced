@@ -1,4 +1,3 @@
-use iced::advanced::Text;
 use iced::alignment;
 use iced::executor;
 use iced::keyboard;
@@ -144,10 +143,7 @@ impl Application for Stopwatch {
 
         let controls = row![toggle_button, reset_button].spacing(20);
 
-        let woord = text("typhus").size(40);
-        // display is here
-        // let content = column![duration, controls]
-        let content = column![woord, controls]
+        let content = column![duration, controls]
             .align_items(Alignment::Center)
             .spacing(20);
 
