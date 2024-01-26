@@ -143,15 +143,14 @@ impl Application for Stopwatch {
 
         let controls = row![toggle_button, reset_button].spacing(20);
 
-        let woord = String::from("whareva mate.");
+        let woord = text("typhus");
         // display is here
         // let content = column![duration, controls]
         let content = column![woord, controls]
             .align_items(Alignment::Center)
             .spacing(20);
 
-        // container(content)
-        container(woord)
+        container(content)
             .width(Length::Fill)
             .height(Length::Fill)
             .center_x()
