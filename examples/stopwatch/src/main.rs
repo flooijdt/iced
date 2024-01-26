@@ -148,7 +148,10 @@ impl Application for Stopwatch {
             .align_items(Alignment::Center)
             .spacing(20);
 
-        container(content)
+        let woord = String::from("whareva mate.");
+
+        // container(content)
+        container(woord)
             .width(Length::Fill)
             .height(Length::Fill)
             .center_x()
