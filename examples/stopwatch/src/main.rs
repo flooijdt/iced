@@ -144,7 +144,7 @@ impl Application for Stopwatch {
 
         let controls = row![toggle_button, reset_button].spacing(20);
 
-        let woord: Text<'_> = text("typhus");
+        let woord = text("typhus").size(40);
         // display is here
         // let content = column![duration, controls]
         let content = column![woord, controls]
