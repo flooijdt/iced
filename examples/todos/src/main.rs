@@ -212,7 +212,7 @@ impl Application for Todos {
                     .style(Color::from([0.5, 0.5, 0.5]))
                     .horizontal_alignment(alignment::Horizontal::Center);
 
-                let input = text_input("What needs to be done?", input_value)
+                let input = text_input("say whaaaa?", input_value)
                     .id(INPUT_ID.clone())
                     .on_input(Message::InputChanged)
                     .on_submit(Message::CreateTask)
